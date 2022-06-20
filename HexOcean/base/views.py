@@ -1,4 +1,3 @@
-from .forms import *
 from django.http import  JsonResponse
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
@@ -7,6 +6,7 @@ from .serializers import ImageSerializer,UserSerializer
 from rest_framework import status
 from PIL import Image as im
 from datetime import datetime
+from .models import User,Image,Tier
 
 # list all users /users/ url working for it
 @api_view(['GET'])
