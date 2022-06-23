@@ -8,8 +8,23 @@ virtualenv env
 env\scripts\activate
 3 - cd into project "cd Hexocean"
 4 - pip install -r requirements.txt
-5 - python manage.py runserver
-6 - and then you need .env file because i hided my secret key or you can create your SECRET KEY.
+5 - and then you need .env file because i hided my secret key or you can create your SECRET KEY.
+  For generate Secret Key 
+  Solution 1:
+    python manage.py shell( will open python shell ) in shell write 
+    "from django.core.management.utils import get_random_secret_key"  and
+    "print(get_random_secret_key())" coppy generated secret key and go to settings.py and paste it like 
+    SECRET_KEY = 'django-insecure-b(6po*cs%s%_@e%ssdasddrx854iersad_)c8asda='
+  Solution 2:
+    echo "SECRET_KEY=$(openssl rand -base64 32)" > .env  it will create .env file and write genreated secret key in to the file 
+6 - python manage.py createsuperuser(create super user to access admin panel
+7 - python manage.py makemigrations 
+8 - python manage.py migrate
+9 - python manage.py runserver
+
+
+
+
 For the run this project quickly I didn't use Postgresql in here but i will upload my project again with Postgresql.![List all images user have](https://user-images.githubusercontent.com/63463164/174626754-47eb9b61-f192-442c-ac80-c2ab96c76b11.PNG)
 
 in admin panel
