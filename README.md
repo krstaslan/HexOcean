@@ -1,9 +1,15 @@
 This project developed for HexOcean according to task definition.
 
-
-To run this projects firstly you should use 
-pip install -r requirements.txt
-and then you need .env file because i hided my secret key. 
+Installation
+1 - clone repo https://github.com/krstaslan/HexOcean
+2 - create a virtual environment and activate
+pip install virtualenv
+virtualenv env
+env\scripts\activate
+3 - cd into project "cd Hexocean"
+4 - pip install -r requirements.txt
+5 - python manage.py runserver
+6 - and then you need .env file because i hided my secret key or you can create your SECRET KEY.
 For the run this project quickly I didn't use Postgresql in here but i will upload my project again with Postgresql.![List all images user have](https://user-images.githubusercontent.com/63463164/174626754-47eb9b61-f192-442c-ac80-c2ab96c76b11.PNG)
 
 in admin panel
